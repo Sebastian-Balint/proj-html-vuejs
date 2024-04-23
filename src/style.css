@@ -55,6 +55,36 @@ body {
   justify-content: center;
 }
 
+/* General */
+
+h1 {
+  font-size: 44px;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+h5 {
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+p {
+  font-size: 11px;
+  color: var(--secondary-color);
+}
+
 /* Debug */
 
 .debug {
@@ -64,6 +94,15 @@ body {
 header {
   height: 600px;
   width: 100%;
+  background-color: var(--black);
+
+  h1 {
+    color: var(--light);
+  }
+
+  p {
+    font-size: 14px;
+  }
 
   nav {
     height: 80px;
@@ -94,24 +133,30 @@ header {
   }
 }
 
-h1 {
-  font-size: 40px;
-}
-
 footer {
-  height: 380px;
+  height: 300px;
+  background-color: #121314;
 
-  .nav {
-    height: 300px;
-    width: 100%;
+  .container {
     justify-content: space-around;
     align-items: center;
   }
 
-  .copyright {
-    height: 80px;
-    width: 100%;
+  p {
+    font-size: 10px;
   }
+}
+
+footer,
+header .debug {
+  border: 1px dashed white;
+}
+
+.copyright {
+  height: 80px;
+  width: 100%;
+  color: var(--secondary-color);
+  background-color: #161718;
 }
 
 .image {
@@ -121,20 +166,29 @@ footer {
 
 .pro {
   height: 350px;
-  background-color: var(--secondary-color);
+  background-color: var(--black);
   position: relative;
 }
 
 .services {
   height: 620px;
   position: relative;
+
+  .triangle {
+    background-image: url(/public/triangle-black.svg);
+  }
 }
 
 .products {
   height: 680px;
+  background-color: black;
 
   .column {
     height: 100%;
+  }
+
+  p {
+    color: var(--primary-color);
   }
 }
 
@@ -173,4 +227,31 @@ footer {
 
 .section-title {
   margin: auto;
+}
+
+/* Button */
+
+button {
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--black);
+  }
+}
+
+.services button:hover {
+  color: var(--white);
+}
+
+.blog button:hover {
+  color: var(--light);
 }

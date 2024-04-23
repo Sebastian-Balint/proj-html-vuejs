@@ -15,7 +15,7 @@ export default {
         <h1 class="serif">Pro Barbers</h1>
         <button>Meet your new barber</button>
       </div>
-      <div class="triangle debug"></div>
+      <div class="triangle"></div>
     </div>
 
     <div class="services debug">
@@ -51,7 +51,7 @@ export default {
           <button>Read about our services</button>
         </div>
       </div>
-      <div class="triangle debug"></div>
+      <div class="triangle"></div>
     </div>
 
     <div class="products debug">
@@ -109,7 +109,7 @@ export default {
                 deserunt aut cumque quasi.
               </p>
               <div class="person debug"></div>
-              <h5>John Doe</h5>
+              <h5>Pete Jones</h5>
             </section>
 
             <section class="text-center flex column flex-center">
@@ -119,7 +119,7 @@ export default {
                 deserunt aut cumque quasi.
               </p>
               <div class="person debug"></div>
-              <h5>John Doe</h5>
+              <h5>Mark Wilson</h5>
             </section>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default {
     </div>
 
     <div class="blog debug">
-      <div class="triangle reverse debug"></div>
+      <div class="triangle reverse"></div>
       <div class="container flex debug column">
         <div class="center">
           <div class="section-title text-center">
