@@ -9,8 +9,8 @@ export default {
 
 <template>
   <main>
-    <div class="pro debug flex column">
-      <div class="section-title debug flex column flex-center">
+    <div class="pro flex column">
+      <div class="section-title flex column flex-center">
         <h4>Award Winning</h4>
         <h1 class="serif">Pro Barbers</h1>
         <button>Meet your new barber</button>
@@ -18,8 +18,8 @@ export default {
       <div class="triangle"></div>
     </div>
 
-    <div class="services debug">
-      <div class="container flex debug column">
+    <div class="services">
+      <div class="container flex column">
         <div class="center">
           <div class="section-title text-center">
             <h4>mens grooming</h4>
@@ -27,6 +27,7 @@ export default {
           </div>
           <div class="flex">
             <section class="text-center">
+              <div class="services-icon image first"></div>
               <h2 class="serif">Trim & Cut</h2>
               <p>
                 Avada Barbers are expert in the lickety split trim and hair cut.
@@ -34,6 +35,7 @@ export default {
               </p>
             </section>
             <section class="text-center">
+              <div class="services-icon image third"></div>
               <h2 class="serif">Wash & Dry</h2>
               <p>
                 Take a seat in our fine leather chairs lean back and let us
@@ -41,6 +43,7 @@ export default {
               </p>
             </section>
             <section class="text-center">
+              <div class="services-icon image third"></div>
               <h2 class="serif">Beard Tidy</h2>
               <p>
                 Tame the tangles and untidy facial hairs like a gentleman with
@@ -98,7 +101,7 @@ export default {
                 possimus vel provident eligendi quibusdam, itaque quaerat
                 deserunt aut cumque quasi.
               </p>
-              <div class="person debug"></div>
+              <div class="person image first"></div>
               <h5>John Doe</h5>
             </section>
 
@@ -108,7 +111,7 @@ export default {
                 possimus vel provident eligendi quibusdam, itaque quaerat
                 deserunt aut cumque quasi.
               </p>
-              <div class="person debug"></div>
+              <div class="person image second"></div>
               <h5>Pete Jones</h5>
             </section>
 
@@ -118,7 +121,7 @@ export default {
                 possimus vel provident eligendi quibusdam, itaque quaerat
                 deserunt aut cumque quasi.
               </p>
-              <div class="person debug"></div>
+              <div class="person image third"></div>
               <h5>Mark Wilson</h5>
             </section>
           </div>
