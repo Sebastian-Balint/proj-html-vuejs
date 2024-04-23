@@ -11,18 +11,18 @@ export default {
   <footer>
     <div class="container debug">
       <div class="nav debug flex">
-        <div class="product flex debug">
+        <div class="flex debug column">
           <div class="image debug"></div>
           <button>Shop our range now</button>
         </div>
-        <div class="contacts flex debug">
+        <div class="contacts flex debug text-center column">
           <p>
             Avada Barbers<br />123 New York Street<br />New York City<br />info@yourwebsite.com<br />+1
             (555) 555-1212
           </p>
           <h3>Follow <i class="fa fa-user" aria-hidden="true"></i></h3>
         </div>
-        <div class="product flex debug">
+        <div class="flex debug column">
           <div class="image debug"></div>
           <button>Shop our range now</button>
         </div>
