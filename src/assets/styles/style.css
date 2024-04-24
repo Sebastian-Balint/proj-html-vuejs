@@ -10,13 +10,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Lato", sans-serif;
 }
-
-/* General */
 
 h1 {
   font-size: 44px;
@@ -51,6 +50,10 @@ p {
   line-height: 18px;
 }
 
+a {
+  text-decoration: none;
+}
+
 hr {
   width: 150px;
   border-top: 3px solid var(--primary-color);
@@ -58,6 +61,41 @@ hr {
   border-left: none;
   border-right: none;
   margin: 10px 0;
+}
+
+i {
+  color: var(--light);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+button {
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 12px 25px;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--black);
+  }
+}
+
+.services button:hover {
+  color: var(--white);
+}
+
+.blog button:hover {
+  color: var(--light);
 }
 
 /* Debug */
@@ -85,10 +123,8 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    .logo,
     .icon {
-      height: 30px;
-      width: 80px;
+      gap: 20px;
     }
   }
 
@@ -113,16 +149,20 @@ footer {
   background-color: #121314;
 
   .container {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   p {
     font-size: 10px;
   }
+
+  i {
+    margin: 20px auto;
+  }
 }
 
-footer,
+footer .debug,
 header .debug {
   border: 1px dashed white;
 }
@@ -142,7 +182,6 @@ header .debug {
 
 .pro {
   height: 350px;
-  background-color: var(--black);
   position: relative;
 }
 
@@ -162,7 +201,6 @@ header .debug {
 
 .products {
   height: 680px;
-  background-color: black;
 
   .column {
     height: 100%;
@@ -186,18 +224,20 @@ header .debug {
 .blog {
   height: 682px;
   background-color: var(--light);
+
+  .blog-post {
+    justify-content: space-between;
+
+    .post {
+      width: 227px;
+    }
+  }
 }
 
 .person {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-}
-
-.product {
-  justify-content: space-evenly;
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 .triangle {
