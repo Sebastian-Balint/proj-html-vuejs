@@ -10,19 +10,21 @@ header {
   background-size: cover;
   height: 488px;
   width: 334px;
-}
 
-.logo {
-  width: 108px;
-  height: 38px;
-  margin: 10px 0;
-  background-size: cover;
-  background-image: url(/images/avadabarbers-logo-x2.png);
-}
+  .logo {
+    width: 108px;
+    height: 38px;
+    margin: 10px 0;
+    background-size: cover;
+    background-image: url(/images/avadabarbers-logo-x2.png);
+  }
 
-.jumbotron-img {
-  background-image: url(/images/jumbotron_image.png);
-  background-size: contain;
+  .jumbotron-img {
+    background-image: url(/images/jumbotron_image.png);
+    background-size: contain;
+    height: 488px;
+    width: 334px;
+  }
 }
 
 /* Main */
@@ -124,16 +126,18 @@ header {
 
 /* Footer */
 
-.footer-image {
-  background-size: cover;
-  width: 230px;
-  height: 180px;
-}
+footer {
+  .footer-image {
+    background-size: cover;
+    width: 230px;
+    height: 180px;
+  }
 
-.footer-image.first {
-  background-image: url(/images/footer_1.png);
-}
+  .footer-image.first {
+    background-image: url(/images/footer_1.png);
+  }
 
-.footer-image.second {
-  background-image: url(/images/footer_2.png);
+  .footer-image.second {
+    background-image: url(/images/footer_2.png);
+  }
 }
