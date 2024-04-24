@@ -11,20 +11,20 @@ header {
   height: 488px;
   width: 334px;
 
-  .logo {
-    width: 108px;
-    height: 38px;
-    margin: 10px 0;
-    background-size: cover;
-    background-image: url(/images/avadabarbers-logo-x2.png);
-  }
-
   .jumbotron-img {
     background-image: url(/images/jumbotron_image.png);
     background-size: contain;
     height: 488px;
     width: 334px;
   }
+}
+
+.logo {
+  width: 108px;
+  height: 38px;
+  margin: 10px 0;
+  background-size: cover;
+  background-image: url(/images/avadabarbers-logo-x2.png);
 }
 
 /* Main */
@@ -82,6 +82,22 @@ header {
   }
 }
 
+.butter {
+  .butter-back {
+    height: 100%;
+    width: 300px;
+    background-image: url(/images/butter_background.jpg);
+    background-size: cover;
+
+    .butter-image {
+      width: 260px;
+      height: 260px;
+      background-image: url(/images/shaving_butter.png);
+      background-size: contain;
+    }
+  }
+}
+
 .reviews {
   .person {
     background-size: contain;
@@ -131,6 +147,7 @@ footer {
     background-size: cover;
     width: 230px;
     height: 180px;
+    margin-bottom: 15px;
   }
 
   .footer-image.first {
