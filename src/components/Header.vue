@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header id="header">
     <div class="container">
       <nav class="flex">
         <div class="logo image"></div>
@@ -28,6 +28,9 @@ export default {
       </div>
     </div>
   </header>
+  <a href="#header" class="btn-fixed flex flex-center">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
 </template>
 
 <style scoped></style>
